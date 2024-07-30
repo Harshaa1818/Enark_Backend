@@ -30,6 +30,7 @@ import {adminRouter} from  './Routes/admin.routes.js'
 app.use('/api/v1/user',userRouter)
 app.use('/api/v1/task',taskRouter)
 app.use('/api/v1/admin',adminRouter)
-
+app.get('/',((req,res)=>{
+res.write("hw")}))
 
 export default app
